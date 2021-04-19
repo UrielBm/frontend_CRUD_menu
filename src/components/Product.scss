@@ -1,0 +1,13 @@
+tr.wrapperProduct td {
+  border-bottom: 2px solid #ffc2b4;
+  .text-link {
+    border: none;
+    background: none;
+    color: #000000;
+    outline: none;
+    &:hover {
+      color: #5eaaa8;
+      outline: none;
+    }
+  }
+}

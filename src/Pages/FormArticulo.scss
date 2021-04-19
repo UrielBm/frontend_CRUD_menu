@@ -1,0 +1,107 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 0 0;
+  box-sizing: border-box;
+  .subtitle {
+    font-size: 3rem;
+  }
+  .alert {
+    background-color: #810000;
+    color: #ffffff;
+    padding: 1rem;
+    width: 340px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+  }
+  .wrapperForm {
+    .wrapperBasic {
+      margin: 0 0 1rem 0;
+      box-sizing: border-box;
+    }
+    .wrapperDescription {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 0 1rem 0;
+      .wrapperInputDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .label {
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+        .textArea {
+          width: 340px;
+          border-radius: 0.5rem;
+          padding: 1rem;
+          border: 2px solid #194350;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .wrapperInput {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2rem 0 0;
+      box-sizing: border-box;
+      .label {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .input {
+        padding: 0.5rem 1rem;
+        width: 340px;
+        box-sizing: border-box;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid #194350;
+      }
+    }
+    .wrapperButton {
+      margin-bottom: 1rem;
+      .btn-register {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 2rem;
+        width: 240px;
+        background-color: #9dbeb9;
+        box-sizing: border-box;
+        outline: none;
+        transition: background-color 0.4s ease-in-out, width 0.4s ease-in-out;
+        &:hover {
+          background-color: #194350;
+          color: #ffffff;
+          width: 280px;
+        }
+      }
+      .btn-delete {
+        @extend .btn-register;
+        background-color: #ce1212;
+        &:hover {
+          background-color: #810000;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .FormWrapper {
+    .subtitle {
+      font-size: 1.5rem;
+    }
+    .wrapperForm {
+      .wrapperBasic {
+        margin: 0 0 1rem 0;
+        box-sizing: border-box;
+        width: 340px;
+      }
+    }
+  }
+}

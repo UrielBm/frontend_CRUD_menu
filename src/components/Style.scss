@@ -1,0 +1,41 @@
+.wrapperHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ff8882;
+  .title {
+    text-decoration: none;
+    color: #000000;
+  }
+  .Button-add {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: #9dbeb9;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    outline: none;
+    transition: background-color 0.4s ease-in-out, width 0.4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      width: 330px;
+      background-color: #194350;
+      color: #ffffff;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .wrapperHeader {
+    flex-direction: column;
+    .title h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
