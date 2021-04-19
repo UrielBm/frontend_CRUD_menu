@@ -1,4 +1,4 @@
-# App TaskProyects-App
+# App Menú CRUD restaurante
 
 Esta es una aplicación hecha con las tecnlogias de React,Sass, HTML,Redux, Css y axios, Uso de backend en Node.js y Express junto Redux para practicar mis conocimientos acerca de estos temás, la aplicación tiene la función crear productos y agregarlos a una tabla menus,editar y crear nuevos productos además de eliminarlos, cada estado se maneja en Redux haciendo uso también de una Api del lado de back-end [Api](https://backendcrudrestaurante.herokuapp.com/) todo el proyecto esta hecho con Hooks y Functional Components
 
